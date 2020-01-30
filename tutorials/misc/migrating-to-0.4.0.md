@@ -78,7 +78,7 @@ class MyDatasetReader(DatasetReader)
         # whatever other initialization you need
 ```
 
-For the reasoning behind this change, see the [Laziness tutorial](https://github.com/allenai/allennlp/blob/master/tutorials/getting_started/laziness.md).
+For the reasoning behind this change, see the [Laziness tutorial](https://github.com/allenai/allennlp/blob/master/docs/tutorials/getting_started/laziness.md).
 
 # CHANGES YOU ARE MUCH LESS LIKELY TO RUN INTO
 

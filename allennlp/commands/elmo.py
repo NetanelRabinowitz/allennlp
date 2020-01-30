@@ -102,7 +102,7 @@ class Elmo(Subcommand):
     As a result, ELMo will return differing results if the same sentence is
     passed to the same ``Elmo`` instance multiple times.
 
-    See https://github.com/allenai/allennlp/blob/master/tutorials/how_to/elmo.md for more details.
+    See https://github.com/allenai/allennlp/blob/master/docs/tutorials/how_to/elmo.md for more details.
     """
 
     @overrides

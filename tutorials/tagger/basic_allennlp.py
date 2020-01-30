@@ -119,7 +119,7 @@ class PosDatasetReader(DatasetReader):
     #### <code>DatasetReader.text_to_instance</code> takes the inputs corresponding
     #### to a training example (in this case the tokens of the sentence and the
     #### corresponding part-of-speech tags), instantiates the corresponding
-    #### <a href="https://github.com/allenai/allennlp/blob/master/tutorials/notebooks/data_pipeline.ipynb"><code>Field</code>s</a>
+    #### <a href="https://github.com/allenai/allennlp/blob/master/docs/tutorials/notebooks/data_pipeline.ipynb"><code>Field</code>s</a>
     #### (in this case a <code>TextField</code> for the sentence and a <code>SequenceLabelField</code> 
     #### for its tags), and returns the <code>Instance</code> containing those fields.
     #### Notice that the tags are optional, since we'd like to be able to create instances 
@@ -262,7 +262,7 @@ token_embedding = Embedding(num_embeddings=vocab.get_vocab_size('tokens'),
 word_embeddings = BasicTextFieldEmbedder({"tokens": token_embedding})
 #### We next need to specify the sequence encoder. The need for <code>PytorchSeq2SeqWrapper</code>
 #### here is slightly unfortunate
-#### (and if you use <a href = "https://github.com/allenai/allennlp/blob/master/tutorials/tagger/README.md#using-config-files">configuration files</a>
+#### (and if you use <a href = "https://github.com/allenai/allennlp/blob/master/docs/tutorials/tagger/README.md#using-config-files">configuration files</a>
 #### you won't need to worry about it) but here it's required to add some extra functionality
 #### (and a cleaner interface) to the built-in PyTorch module. In AllenNLP we do everything batch first,
 #### so we specify that as well.
@@ -377,6 +377,6 @@ np.testing.assert_array_almost_equal(tag_logits2, tag_logits)
 </p>
 <p>
     For more details on how this would work in this example, please read
-    <a href = "https://github.com/allenai/allennlp/blob/master/tutorials/tagger/README.md#using-config-files">Using Config Files</a>.
+    <a href = "https://github.com/allenai/allennlp/blob/master/docs/tutorials/tagger/README.md#using-config-files">Using Config Files</a>.
 </p>
 """
